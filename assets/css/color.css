@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "Roboto Light";
+
+	src: url("/fonts/Roboto-Light.woff2");
+}
+@font-face {
+	font-family: "Roboto";
+
+	src: url("/fonts/Roboto-Regular.woff2");
+}
+@font-face {
+	font-family: "Roboto Medium";
+
+	src: url("/fonts/Roboto-Medium.woff2");
+}
+@font-face {
+	font-family: "Roboto Bold";
+
+	src: url("/fonts/Roboto-Bold.woff2");
+}
+
+:root {
+	--border-color: #d8d8d8;
+	--background-color: #ffffff;
+
+	--color-font: #212121;
+	--color-additional-font: #5e5e5e;
+	--project-border-color: #a5a5a5;
+	--background-color-progress: #d8d8d8;
+	--background-color-progress-fill-line: #212121;
+}
+
+.dark-mode {
+	--border-color: #d8d8d8;
+	--background-color: #212121;
+
+	--color-font: #f0f0f0;
+	--color-additional-font: #c5c5c5;
+	--project-border-color: #a5a5a5;
+	--background-color-progress: #212121;
+	--background-color-progress-fill-line: #d8d8d8;
+}

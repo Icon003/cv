@@ -1,0 +1,104 @@
+{
+	"skills": [
+		{
+			"title": "Навыки",
+			"type": "standart",
+			"items": [
+				{
+					"name": "Nuxt",
+					"value": 80
+				},
+				{
+					"name": "Vue",
+					"value": 80
+				},
+				{
+					"name": "Vuex",
+					"value": 80
+				},
+				{
+					"name": "JS",
+					"value": 60
+				},
+				{
+					"name": "jQuery",
+					"value": 60
+				},
+				{
+					"name": "CSS",
+					"value": 80
+				},
+				{
+					"name": "SASS",
+					"value": 60
+				},
+				{
+					"name": "LESS",
+					"value": 80
+				},
+				{
+					"name": "Stylus",
+					"value": 80
+				},
+				{
+					"name": "HTML",
+					"value": 40
+				},
+				{
+					"name": "Twig",
+					"value": 40
+				},
+				{
+					"name": "Pug",
+					"value": 40
+				},
+				{
+					"name": "Wordpress",
+					"value": 40
+				},
+				{
+					"name": "OpenCart",
+					"value": 40
+				},
+				{
+					"name": "Electron",
+					"value": 40
+				},
+				{
+					"name": "Webpack",
+					"value": 40
+				},
+				{
+					"name": "Gulp",
+					"value": 40
+				},
+				{
+					"name": "Docker",
+					"value": 40
+				},
+				{
+					"name": "Nginx",
+					"value": 40
+				}
+			]
+		},
+		{
+			"title": "Языки",
+			"type": "percentage",
+			"items": [
+				{
+					"name": "Русский",
+					"value": 100
+				},
+				{
+					"name": "Белорусский",
+					"value": 100
+				},
+				{
+					"name": "Английский",
+					"value": 20
+				}
+			]
+		}
+	]
+}

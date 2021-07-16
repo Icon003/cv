@@ -1,0 +1,28 @@
+{
+	"contacts": [
+		{
+			"title": "Контакты",
+			"items": [
+				{
+					"type": "phone",
+					"icon": "phone.svg",
+					"name": "Телефон",
+					"value": "+375291399115"
+				},
+				{
+					"type": "email",
+					"icon": "email.svg",
+					"name": "Почта",
+					"value": "burbasivan@gmail.com"
+				},
+				{
+					"type": "site",
+					"icon": "linkedin.svg",
+					"name": "Linkedin",
+					"value": "https://www.linkedin.com/in/ivan-burbas-5615301b8"
+				}
+			]
+		}
+	]
+
+}
