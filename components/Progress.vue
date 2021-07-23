@@ -19,10 +19,21 @@ export default {
 	.progress {
 		width: 100%;
 		height: 6px;
+
 		background-color: var(--background-color-progress);
+
+		color-adjust: exact;
 	}
 	.progress__fill-line {
 		height: 100%;
+
 		background-color: var(--background-color-progress-fill-line);
 	}
+
+	@media print {
+		.progress__fill-line {
+			background-color: var(--print-background-color);
+		}
+	}
+
 </style>

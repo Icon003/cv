@@ -5,7 +5,6 @@
 		</div>
 		<div class="project__container-description">
 			<TextParagraph :text="project.description"/>
-			<!-- <p class="project__description">{{ project.description }}</p> -->
 		</div>
 		<div class="project__container-list-technologies">
 			<ul class="project__list-technologies">
@@ -14,9 +13,6 @@
 				</li>
 			</ul>
 		</div>
-		<!-- <div class="project__container-image">
-			<img class="project__image" :src="`/image/projects/${project.image}`" :alt="`Скриншот ${project.name}`">
-		</div> -->
 	</div>
 </template>
 
@@ -37,11 +33,14 @@ export default {
 
 <style scoped>
 	.project {
-		font-family: "Roboto";
-		padding-left: 16px;
-		border-left: 3px solid var(--project-border-color);
 		margin-bottom: 48px;
-		/* border-left: 3px solid var(--color-additional-font); */
+		padding-left: 16px;
+
+		font-family: "Roboto";
+
+		border-left: 3px solid var(--project-border-color);
+
+		page-break-inside: avoid;
 	}
 	.project--last {
 		margin-bottom: 0;
@@ -50,6 +49,7 @@ export default {
 		margin-bottom: 0.5em;
 
 		font-size: 18px;
+
 		color: var(--color-font);
 	}
 	.project__name {
@@ -88,18 +88,12 @@ export default {
 		font-size: inherit;
 		font-weight: 400;
 
-		border: 1px solid var(--color-additional-font);
 		color: var(--color-additional-font);
+		border: 1px solid var(--color-additional-font);
 
 		text-transform: none;
 	}
 	.project__name-technologie {
-	}
-	.project__container-image {
-		width: 70%;
-	}
-	.project__image {
-		width: 100%;
 	}
 
 	@media (max-width: 680px) {
@@ -107,4 +101,5 @@ export default {
 			font-size: 16px;
 		}
 	}
+
 </style>

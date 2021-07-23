@@ -31,4 +31,10 @@ export default {
 
 		border-bottom: 1px solid var(--border-color);
 	}
+	@media print {
+		.block-about-me {
+			padding-top: 0;
+		}
+	}
+
 </style>

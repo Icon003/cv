@@ -1,34 +1,32 @@
 <template>
 	<div class="wrapper">
-		<div class="container-switch-color-mode">
-			<SwitchColorMode/>
+		<div class="container-controll-panel">
+			<ControllPanel/>
 		</div>
-		<div class="container-header">
-			<Header/>
-		</div>
-		<div class="container-aside-and-main">
-			<Aside/>
-					<!-- <br /> -->
-			<p class="break"></p>
-			<Main/>
+		<div>
+			<div class="container-header">
+				<Header/>
+			</div>
+			<div class="container-aside-and-main">
+				<Aside/>
+				<Main/>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import SwitchColorMode from '../components/SwitchColorMode'
+import ControllPanel from '../components/ControllPanel'
 import Header from '../components/Header'
 import Aside from '../components/Aside'
 import Main from '../components/Main'
+
 export default {
 	components: {
-		SwitchColorMode,
+		ControllPanel,
 		Header,
 		Aside,
 		Main,
-	},
-	async asyncData({ $content }) {
-
 	},
 }
 </script>
@@ -46,13 +44,14 @@ export default {
 		padding-bottom: 46px;
 		padding-left: 46px;
 	}
-	.container-switch-color-mode {
+	.container-controll-panel {
 		position: fixed;
+		z-index: 10;
 		top: 46px;
 		right: 46px;
-		z-index: 10;
 	}
 	.container-header {
+		display: flex;
 	}
 	.container-aside-and-main {
 		display: flex;
@@ -74,7 +73,7 @@ export default {
 	}
 
 	@media print {
-		.container-switch-color-mode {
+		.container-controll-panel {
 			display: none;
 		}
 	}

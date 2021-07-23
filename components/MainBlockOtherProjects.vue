@@ -36,9 +36,9 @@ export default {
 		padding-top: 46px;
 		padding-bottom: 46px;
 	}
-	.block-other-projects__container-title {}
-	.block-other-projects__container-project {
-				/* margin-top: 30px; */
-		/* margin-left: 30px; */
+	.block-other-projects__container-title {
 	}
+	.block-other-projects__container-project {
+	}
+
 </style>

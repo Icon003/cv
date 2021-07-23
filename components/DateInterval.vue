@@ -30,12 +30,14 @@ export default {
 <style scoped>
 	.date-interval {
 		display: block;
+
+		margin-bottom: 1.4em;
+
 		font-family: "Roboto Light";
 		font-size: 14px;
 		font-weight: 600;
 
 		color: var(--color-font);
-		margin-bottom: 1.4em;
 	}
 
 </style>

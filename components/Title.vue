@@ -42,4 +42,5 @@ export default {
 			font-size: 22px;
 		}
 	}
+
 </style>

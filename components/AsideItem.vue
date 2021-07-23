@@ -4,15 +4,7 @@
 		<div v-if="type === 'standart'" class="item-aside__container-list">
 			<ul class="item-aside__list">
 				<li v-for="(item, index) of listItems" :key="index" class="item-aside__item-list">
-					<!-- <div class="item-aside__container-item"> -->
-						<span class="item-aside__text-item">{{ item.name }}</span>
-					<!-- </div> -->
-					<!-- <div class="item-aside__wrapper-name">
-						<span v-if="item.iconName" class="item-aside__icon-item" :style="{ 'mask-image': `url(/icon/${item.iconName})` }"></span>
-						<span :class="['item-aside__name-item', {'item-aside__name-item--percentage': type === 'percentage'}]">{{ item.name }}</span>
-					</div> -->
-					<!-- <span v-if="type === 'text' && !flagLink(item.value)" class="item-aside__value-item">{{ item.value }}</span> -->
-					<!-- <a v-else-if="type === 'text' && flagLink(item.value)" class="item-aside__value-item" :href="item.value" target="_blank" rel="nofollow noopener">Ссылка</a> -->
+					<span class="item-aside__text-item">{{ item.name }}</span>
 				</li>
 			</ul>
 		</div>
@@ -25,7 +17,6 @@
 					<div class="item-aside__container-progress-item-percentage">
 						<Progress :percentage="item.value"/>
 					</div>
-
 				</li>
 			</ul>
 		</div>
@@ -141,12 +132,12 @@ export default {
 	}
 	.item-aside__item-list-percentage {
 		width: 100%;
+		margin-bottom: 0.8em;
 
 		font-family: "Roboto Light";
 		font-size: 16px;
 
 		color: var(--color-font);
-		margin-bottom: 0.8em;
 	}
 	.item-aside__container-text-item-percentage {
 		margin-bottom: 0.3em;
@@ -164,4 +155,5 @@ export default {
 			font-size: 14px;
 		}
 	}
+
 </style>

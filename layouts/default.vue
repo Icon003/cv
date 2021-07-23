@@ -10,10 +10,11 @@ export default {
 
 <style>
 	* {
-		padding: 0;
-		margin: 0;
 		box-sizing: border-box;
-		font-family: 'Roboto';
+		margin: 0;
+		padding: 0;
+
+		font-family: "Roboto";
 	}
 	body {
 		background-color: var(--background-color);
@@ -21,4 +22,5 @@ export default {
 	p {
 		font-family: "Roboto Light";
 	}
+
 </style>

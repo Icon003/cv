@@ -1,10 +1,10 @@
 <template>
 	<aside class="aside">
-		<BlockContacts v-for="(contact, index) of contacts"
+		<AsideBlockContacts v-for="(contact, index) of contacts"
 		:key="index"
 		:title="contact.title"
 		:listItems="contact.items"/>
-		<ItemAside v-for="(skill, index) of skills"
+		<AsideItem v-for="(skill, index) of skills"
 		:key="index"
 		:lastFlag="index == skills.length-1"
 		:type="skill.type"
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import ItemAside from '../components/ItemAside'
-import BlockContacts from '../components/BlockContacts'
+import AsideBlockContacts from '../components/AsideBlockContacts'
+import AsideItem from '../components/AsideItem'
 export default {
 	components: {
-		ItemAside,
-		BlockContacts,
+		AsideBlockContacts,
+		AsideItem,
 	},
 	computed: {
 		contacts() {
@@ -38,7 +38,6 @@ export default {
 	.aside {
 		width: 25%;
 		width: 28%;
-		height: 100%;
 		padding-top: 46px;
 		padding-right: 46px;
 
@@ -48,7 +47,6 @@ export default {
 	@media (max-width: 1024px) {
 		.aside {
 			width: 100%;
-			height: auto;
 			padding-right: 0;
 			padding-bottom: 46px;
 
@@ -56,4 +54,12 @@ export default {
 			border-bottom: 1px solid var(--border-color);
 		}
 	}
+	@media print {
+		.aside {
+			padding-bottom: 0;
+
+			border: none;
+		}
+	}
+
 </style>

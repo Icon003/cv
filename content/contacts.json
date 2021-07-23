@@ -5,21 +5,21 @@
 			"items": [
 				{
 					"type": "phone",
-					"icon": "phone.svg",
+					"icon": "phone",
 					"name": "Телефон",
-					"value": "+375291399115"
+					"value": "-"
 				},
 				{
 					"type": "email",
-					"icon": "email.svg",
+					"icon": "email",
 					"name": "Почта",
-					"value": "burbasivan@gmail.com"
+					"value": "-"
 				},
 				{
 					"type": "site",
-					"icon": "linkedin.svg",
+					"icon": "linkedin",
 					"name": "Linkedin",
-					"value": "https://www.linkedin.com/in/ivan-burbas-5615301b8"
+					"value": "-"
 				}
 			]
 		}

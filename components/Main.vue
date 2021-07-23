@@ -1,22 +1,23 @@
 <template>
 	<main class="main">
-		<BlockAboutMe :title="aboutMeInfo.title" :text="aboutMeInfo.info"/>
 		<p class="break"></p>
-		<BlockContent v-for="(item, index) of content" :key="index" :title="item.title" :items="item.items"/>
+		<MainBlockAboutMe :title="aboutMeInfo.title" :text="aboutMeInfo.info"/>
 		<p class="break"></p>
-		<BlockOtherProjects v-for="(itemOtherProject, index) of otherProjects" :key="index" :title="itemOtherProject.title" :items="itemOtherProject.items"/>
+		<MainBlockContent v-for="(item, index) of content" :key="index" :title="item.title" :items="item.items"/>
+		<p class="break"></p>
+		<MainBlockOtherProjects v-for="(itemOtherProject, index) of otherProjects" :key="index" :title="itemOtherProject.title" :items="itemOtherProject.items"/>
 	</main>
 </template>
 
 <script>
-import BlockAboutMe from '../components/BlockAboutMe'
-import BlockContent from '../components/BlockContent'
-import BlockOtherProjects from '../components/BlockOtherProjects'
+import MainBlockAboutMe from '../components/MainBlockAboutMe'
+import MainBlockContent from '../components/MainBlockContent'
+import MainBlockOtherProjects from '../components/MainBlockOtherProjects'
 export default {
 	components: {
-		BlockAboutMe,
-		BlockContent,
-		BlockOtherProjects,
+		MainBlockAboutMe,
+		MainBlockContent,
+		MainBlockOtherProjects,
 	},
 	computed: {
 		aboutMeInfo() {
@@ -38,7 +39,6 @@ export default {
 
 <style scoped>
 	.main {
-		/* width: 75%; */
 		width: 72%;
 		height: 100%;
 		padding-left: 46px;
@@ -50,4 +50,13 @@ export default {
 			padding-left: 0;
 		}
 	}
+	@media print {
+		.main {
+			height: auto;
+		}
+		.break {
+			page-break-before: always;
+		}
+	}
+
 </style>

@@ -7,10 +7,6 @@
 		<DateInterval :dateStart="dateStart" :dateEnd="dateEnd"/>
 		<TextParagraph :text="text"/>
 		<div v-if="projects.length" class="block-content__container-projects">
-			<!-- <div class="block-content__container-title-projects">
-				<h5 class="block-content__title-projects">Проекты</h5>
-			</div> -->
-
 			<Project v-for="(project, index) of projects" :key="index" :project="project"/>
 		</div>
 	</li>
@@ -116,4 +112,5 @@ export default {
 			margin-left: 16px;
 		}
 	}
+
 </style>

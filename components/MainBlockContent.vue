@@ -2,7 +2,7 @@
 	<div class="block-content">
 		<Title :title="title"/>
 		<ul class="block-content__list">
-			<ItemBlockContent v-for="(item, index) of items"
+			<MainItemBlockContent v-for="(item, index) of items"
 			:key="index"
 			:lastFlag="index == items.length-1"
 			:title="item.title"
@@ -17,11 +17,11 @@
 
 <script>
 import Title from '../components/Title'
-import ItemBlockContent from '../components/ItemBlockContent'
+import MainItemBlockContent from '../components/MainItemBlockContent'
 export default {
 	components: {
 		Title,
-		ItemBlockContent,
+		MainItemBlockContent,
 	},
 	props: {
 		title: {
@@ -30,10 +30,7 @@ export default {
 		items: {
 			type: Array
 		}
-	},
-	// beforeMount() {
-	// 	console.log(this.items[0].projects.length)
-	// }
+	}
 }
 </script>
 
@@ -47,4 +44,5 @@ export default {
 	.block-content__list {
 		list-style-type: none;
 	}
+
 </style>

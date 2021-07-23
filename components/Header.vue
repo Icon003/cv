@@ -49,23 +49,20 @@ export default {
 	.header__container-fio-title {
 		margin-bottom: 0.5em;
 
-		/* font-size: 72px; */
 		font-size: 36px;
+
+		color: var(--color-font);
 
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
-		color: var(--color-font);
 	}
 	.header__fio {
-		/* font-size: inherit; */
 		line-height: 1.1em;
 	}
 	.header__name {
-		/* font-size: inherit; */
 		line-height: 1.1em;
 	}
 	.header__surname {
-		/* font-size: inherit; */
 		line-height: 1.1em;
 	}
 	.header__patronymic {
@@ -90,4 +87,5 @@ export default {
 			font-size: 24px;
 		}
 	}
+
 </style>

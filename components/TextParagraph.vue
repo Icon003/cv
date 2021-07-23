@@ -1,6 +1,5 @@
 <template>
 	<div class="text-paragraph" v-html="text"></div>
-	<!-- <nuxt-content :document="text"/> -->
 </template>
 
 <script>
@@ -18,11 +17,13 @@ export default {
 		font-family: "Roboto Light";
 		font-size: 14px;
 
+		line-height: 1.3em;
 		color: var(--color-additional-font);
 	}
-	.text-paragraph > p {
+	.text-paragraph p {
 		font-family: inherit;
 		font-size: inherit;
+		
 
 		color: inherit;
 	}
@@ -38,4 +39,5 @@ export default {
 
 		color: inherit;
 	}
+
 </style>

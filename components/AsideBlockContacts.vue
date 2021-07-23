@@ -7,14 +7,13 @@
 			<ul class="block-contacts__list">
 				<li v-for="(item, index) of listItems" :key="index" class="block-contacts__item">
 					<div class="block-contacts__container-icon">
-						<i :class="['block-contacts__icon']" :style="{ 'mask-image': `url(/icon/${item.icon})` }"></i>
+						<i :class="['block-contacts__icon', `block-contacts__icon--${item.icon}`]"></i>
 					</div>
 					<div class="block-contacts__container-value">
 						<a class="block-contacts__link"
 						target="_blank"
 						ref="nofollow noopener"
 						:href="[item.type === 'phone' ? `tel:${item.value}` : item.type === 'email' ? `mailto:${item.value}` : `${item.value}`]">
-						<!-- :href="`${setTypeLink(item.type)}${item.value}`"> -->
 							<span class="block-contacts__value">{{ item.type === "site" ? "Ссылка" : item.value }}</span>
 						</a>
 					</div>
@@ -99,6 +98,15 @@ export default {
 		mask-position: center;
 		mask-size: contain;
 	}
+	.block-contacts__icon--phone {
+		mask-image: url("/icon/phone.svg");
+	}
+	.block-contacts__icon--email {
+		mask-image: url("/icon/email.svg");
+	}
+	.block-contacts__icon--linkedin {
+		mask-image: url("/icon/linkedin.svg");
+	}
 	.block-contacts__container-value {
 		display: flex;
 	}
@@ -118,6 +126,25 @@ export default {
 		}
 		.block-contacts__item {
 			font-size: 14px;
+		}
+	}
+
+	@media print {
+		.block-contacts__icon {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+			color-adjust: exact;
+		}
+		.block-contacts__icon--phone {
+			background-image: url("/icon/phone.svg");
+		}
+		.block-contacts__icon--email {
+			background-image: url("/icon/email.svg");
+		}
+		.block-contacts__icon--linkedin {
+			background-image: url("/icon/linkedin.svg");
 		}
 	}
 
