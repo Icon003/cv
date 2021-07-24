@@ -57,11 +57,6 @@ export default {
 					'item-aside item-aside--last': this.lastFlag === true,
 				}
 			}
-		},
-		flagLink(value) {
-			return (value) => {
-				return value.includes('http')
-			}
 		}
 	}
 }

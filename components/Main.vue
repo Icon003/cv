@@ -30,7 +30,6 @@ export default {
 		},
 		otherProjects() {
 			const response = this.$store.getters['GET_OTHER_PROJECTS']
-			// console.log(response)
 			return response
 		},
 	}

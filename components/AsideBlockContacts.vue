@@ -39,17 +39,6 @@ export default {
 			type: Array,
 			required: true,
 		},
-	},
-	computed: {
-		setTypeLink(type) {
-			return () => {
-				return {
-					'tel:': type === "phone",
-					'mail:': type === "email",
-					'': type === "site",
-				}
-			}
-		},
 	}
 }
 </script>
