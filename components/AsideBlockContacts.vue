@@ -12,7 +12,7 @@
 					<div class="block-contacts__container-value">
 						<a class="block-contacts__link"
 						target="_blank"
-						ref="nofollow noopener"
+						rel="nofollow noopener"
 						:href="[item.type === 'phone' ? `tel:${item.value}` : item.type === 'email' ? `mailto:${item.value}` : `${item.value}`]">
 							<span class="block-contacts__value">{{ item.type === "site" ? "Ссылка" : item.value }}</span>
 						</a>
