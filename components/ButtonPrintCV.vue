@@ -1,5 +1,5 @@
 <template>
-	<button class="button-print-cv" @click.prevent="printCV">
+	<button class="button-print-cv" @click.prevent="printCV" aria-label="Напечатать резюме">
 		<i class="button-print-cv__icon"></i>
 	</button>
 </template>

@@ -1,7 +1,7 @@
 <template>
 	<div class="project">
 		<div class="project__container-name">
-			<h5 class="project__name">{{ project.name }}</h5>
+			<h4 class="project__name">{{ project.name }}</h4>
 		</div>
 		<div class="project__container-description">
 			<TextParagraph :text="project.description"/>

@@ -1,5 +1,5 @@
 <template>
-	<button class="switch-color-mode" @click.prevent="switchColorMode">
+	<button class="switch-color-mode" @click.prevent="switchColorMode" aria-label="Сменить цветовую схему">
 		<i :class="['switch-color-mode__icon', this.$colorMode.value === 'dark' ? 'switch-color-mode__icon--light' : 'switch-color-mode__icon--dark']"></i>
 	</button>
 </template>
