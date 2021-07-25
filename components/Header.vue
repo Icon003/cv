@@ -87,5 +87,10 @@ export default {
 			font-size: 24px;
 		}
 	}
+	@media (max-width: 320px) {
+		.header__container-fio-title {
+			font-size: 18px;
+		}
+	}
 
 </style>
