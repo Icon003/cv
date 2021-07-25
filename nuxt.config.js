@@ -57,7 +57,8 @@ export default {
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
-		'@nuxtjs/color-mode'
+		'@nuxtjs/color-mode',
+		['@nuxtjs/dotenv', { filename: `.env.${process.env.NODE_ENV}` }],
 	],
 	colorMode: {
 		// preference: 'light', // default value of $colorMode.preference
