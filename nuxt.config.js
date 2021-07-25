@@ -1,5 +1,6 @@
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })
-
+const isMetrika = process.env.APP_METRIKA !== "true"
+console.log('isMetrika', isMetrika)
 export default {
 	// Target: https://go.nuxtjs.dev/config-target
 	// target: "static",
@@ -48,10 +49,14 @@ export default {
 	],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-	plugins: [
-		// { src: "@/plugins/jsPDF.js", mode: "client" },
-	],
-
+	...(!isMetrika && {
+		plugins: [
+				{ src: "@/plugins/metrika/script.js", mode: "client" },
+			
+			// { src: "@/plugins/jsPDF.js", mode: "client" },
+		],
+	}),
+	
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: false,
 
