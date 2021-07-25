@@ -31,4 +31,10 @@ export default {
 		margin: 5px;
 	}
 
+	@media (max-width: 680px) {
+		.controll-panel {
+			flex-direction: column;
+		}
+	}
+
 </style>
